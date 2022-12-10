@@ -1,0 +1,41 @@
+{
+  "name": "Break Time Buddy",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Nitish Kafle",
+      "email": "kaflenit@gmail.com"
+    }
+  ],
+  "manifest_version": 3,
+  "description": "Break Time Buddy is a simple and easy-to-use chrome extension that helps you take regular breaks throughout the day. Whether you're working at your desk or on the go, Break Time Buddy has got your back, making sure you don't forget to take care of yourself. With its friendly and intuitive interface, taking breaks has never been easier!",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "/icon.png",
+      "32": "/icon.png",
+      "128": "/icon.png"
+    },
+    "default_title": "Break Time Buddy",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/icon.png",
+    "32": "/icon.png",
+    "128": "/icon.png"
+  },
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "script-src": "self",
+    "object-src": "self"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"]
+}

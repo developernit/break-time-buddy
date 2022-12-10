@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Break Time Buddy</title>
+    <style>
+      .timer-controls {
+        display: flex;
+        align-items: center;
+      }
+
+      .timer-control {
+        margin: 0 10px;
+      }
+    </style>
+    <script src="content.js"></script>
+  </head>
+  <body>
+    <div class="timer">
+      <div class="timer-display">
+        <span id="minutes">00</span>:<span id="seconds">00</span>
+      </div>
+      <div class="timer-controls">
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="start">Start</button>
+        <button id="reset" style="display: none">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>

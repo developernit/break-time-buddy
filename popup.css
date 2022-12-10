@@ -1,0 +1,32 @@
+body {
+  width: 200px;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+#title {
+  font-size: 16px;
+  top: 0px;
+  left: 0px;
+}
+
+button {
+  height: 30px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: rgba(64, 63, 61, 0.812);
+  color: white;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
